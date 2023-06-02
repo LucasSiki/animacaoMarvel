@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    width: 99vw;
+    overflow: hidden;
+}
+
+.background img{
+    width: 100vw;
+    height: 119.02vh;
+    opacity: 50%;
+}
+
+.container-planeta{
+    position: absolute;
+    top: 400px;
+    right: 210px;
+    opacity: 40%;
+    animation: rotatePlanet 55s infinite;
+}
+
+#planetaAzul{
+    height: 150px;
+    opacity: 30%;
+}
+
+.container-poster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-titulo{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 12em #453de3dc;
+    position: absolute;
+    left: 500px;
+    top: -280px;
+}
+
+.lightning-center{
+    position: absolute;
+    height: 800px;
+    top: -90px;
+    left: 290px;
+    animation: rain 1s infinite;
+}
+
+.thor{
+    position: absolute;
+    bottom: -150px;
+    z-index: 10;
+}
+
+p{
+    position: absolute;
+    top: 680px;
+    left: 625px;
+    color: white;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 20;
+}
+
+.titulo{
+    position: absolute;
+    top: 700px;
+    z-index: 15;
+    animation: titulo 5s infinite ease-in-out;
+}
+
+@keyframes rain {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+
+@keyframes rotatePlanet{
+    0%{
+        rotate: 0deg;
+        height: 0px;
+    }
+    50%{
+        height: 120px;
+    }
+    100%{
+        rotate: -360deg;
+        height: 0px;
+    }
+}
+
+
+
+@keyframes titulo {
+    0%{
+        rotate: 0deg;
+        height: 300px;
+    }
+    33%{
+        rotate: 1deg;
+        height: 306px;
+    }
+    66%{
+        rotate: -1deg;
+        height: 306px;
+    }
+    100%{
+        rotate: 0deg;
+        height: 300px;
+    }
+}
+
